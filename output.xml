@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-02T10:58:27.145753" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework-Internal" source="C:\Users\anca.pintilie\PycharmProjects\RobotFramework-Internal">
+<suite id="s1-s1" name="TestCases" source="C:\Users\anca.pintilie\PycharmProjects\RobotFramework-Internal\TestCases">
+<suite id="s1-s1-s1" name="QESDEMO-2879" source="C:\Users\anca.pintilie\PycharmProjects\RobotFramework-Internal\TestCases\QESDEMO-2879.robot">
+<test id="s1-s1-s1-t1" name="QESDEMO-2879: Checkout page: Unsuccessful Checkout - No Payment options are available" line="14">
+<kw name="Open browser and go to url and maximize window" owner="CommonMethods" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:27.550428" level="INFO">Opening browser 'Firefox' to base url 'https://www.demoshop24.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-02T10:58:27.550428" elapsed="11.127280"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-02T10:58:38.677708" elapsed="0.013774"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:27.549349" elapsed="11.142133"/>
+</kw>
+<kw name="Navigate to Checkout page from Shopping Cart Dropdown button" owner="CommonMethods">
+<kw name="User is logged into account" owner="CommonMethods">
+<kw name="Navigating to Returning Customer Login page" owner="CommonMethods">
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:38.693638" elapsed="0.048638"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:38.742345" level="INFO">Clicking element '//*[@id="top-links"]/ul/li[2]/a'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:38.742345" elapsed="0.247361"/>
+</kw>
+<arg>${myAccountMenu}</arg>
+<status status="PASS" start="2024-04-02T10:58:38.693638" elapsed="0.296068"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:38.989706" elapsed="0.013610"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:39.004440" level="INFO">Clicking element '//li[@class='dropdown open']/ul/li[2]/a'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:39.003316" elapsed="0.213067"/>
+</kw>
+<arg>${loginOption}</arg>
+<status status="PASS" start="2024-04-02T10:58:38.989706" elapsed="0.226677"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:38.692567" elapsed="0.523816"/>
+</kw>
+<kw name="Login into My Account" owner="CommonMethods">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:39.217797" level="INFO">Typing text 'at@xmail.com' into text field '//*[@id="input-email"]'.</msg>
+<arg>${emailAddressLoginInput}</arg>
+<arg>${loginEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:39.217797" elapsed="0.058414"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:39.276211" level="INFO">Typing text 'auto12345' into text field '//*[@id="input-password"]'.</msg>
+<arg>${passwordLoginInput}</arg>
+<arg>${loginPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:39.276211" elapsed="0.016858"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:39.294095" elapsed="0.011767"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:39.306923" level="INFO">Clicking element '//*[@value='Login']'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:39.305862" elapsed="0.436481"/>
+</kw>
+<arg>${loginButton}</arg>
+<status status="PASS" start="2024-04-02T10:58:39.293069" elapsed="0.449274"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:39.745177" level="INFO">Current location is 'https://www.demoshop24.com/index.php?route=account/account'.</msg>
+<arg>${urlMyAccountPage}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-04-02T10:58:39.742343" elapsed="0.002834"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:39.746187" level="INFO">Verifying element '//*[@id="content"]/h2[1]' contains exact text 'My Account'.</msg>
+<arg>${titleMyAccount}</arg>
+<arg>My Account</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-04-02T10:58:39.745177" elapsed="0.020581"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:39.217797" elapsed="0.548968"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:38.692567" elapsed="1.074198"/>
+</kw>
+<kw name="Add Items to Shopping Cart" owner="CommonMethods">
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:39.767766" elapsed="0.014684"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:39.783450" level="INFO">Clicking element '//*[@id="logo"]/h1/a'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:39.782450" elapsed="0.341495"/>
+</kw>
+<arg>${pageLogo}</arg>
+<status status="PASS" start="2024-04-02T10:58:39.766765" elapsed="0.358178"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:40.124943" elapsed="0.019761"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:40.145259" level="INFO">Clicking element '//*[@id="content"]/div[2]/div[1]/div/div[3]/button[1]'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:40.144704" elapsed="0.224509"/>
+</kw>
+<arg>${macBookAddToCart}</arg>
+<status status="PASS" start="2024-04-02T10:58:40.124943" elapsed="0.244270"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:40.375210" level="INFO">Current page contains text 'Success: You have added MacBook to your shopping cart!'.</msg>
+<arg>${successMessageMacBook}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-02T10:58:40.369213" elapsed="0.005997"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:40.375210" elapsed="0.012999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:40.388325" level="INFO">Clicking element '//*[@id="content"]/div[2]/div[2]/div/div[1]/a'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:40.388325" elapsed="0.583069"/>
+</kw>
+<arg>${iPhoneItem}</arg>
+<status status="PASS" start="2024-04-02T10:58:40.375210" elapsed="0.596184"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:40.972758" elapsed="0.033612"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.007369" level="INFO">Clicking element '//*[@id="button-cart"]'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.006370" elapsed="0.230157"/>
+</kw>
+<arg>${iPhoneAddToCart}</arg>
+<status status="PASS" start="2024-04-02T10:58:40.972246" elapsed="0.264281"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.254757" level="INFO">Current page contains text 'Success: You have added iPhone to your shopping cart!'.</msg>
+<arg>${successMessageIPhone}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.237067" elapsed="0.017690"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:39.766765" elapsed="1.487992"/>
+</kw>
+<kw name="Check Shopping Cart Black Button Dropdown" owner="CommonMethods">
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.255763" elapsed="0.018239"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.275004" level="INFO">Clicking element '//*[@id="cart"]/button'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.275004" elapsed="0.219788"/>
+</kw>
+<arg>${shoppingCartBlackButton}</arg>
+<status status="PASS" start="2024-04-02T10:58:41.254757" elapsed="0.240035"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${iPhoneDropdownFields}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.494792" elapsed="0.021142"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${macBookDropdownFields}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.516046" elapsed="0.015722"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${priceTableDropdown}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.531768" elapsed="0.015399"/>
+</kw>
+<kw name="Get Element Label And Compare" owner="CommonMethods">
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.553026" level="INFO">${labelElement} = &lt;selenium.webdriver.remote.webelement.WebElement (session="a98bf2e5-a593-4743-a595-3fa51d34f6ef", element="8a1aba1a-050c-4da8-8d09-db67b189a717")&gt;</msg>
+<var>${labelElement}</var>
+<arg>${webElementPath}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.548175" elapsed="0.004851"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.563540" level="INFO">${actualLabel} = View Cart</msg>
+<var>${actualLabel}</var>
+<arg>${labelElement}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.553532" elapsed="0.010008"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actualLabel.strip()}</arg>
+<arg>${expectedArgument}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.563540" elapsed="0.006180"/>
+</kw>
+<arg>${viewCartDropdownButton}</arg>
+<arg>${viewCartText}</arg>
+<status status="PASS" start="2024-04-02T10:58:41.548175" elapsed="0.022543"/>
+</kw>
+<kw name="Get Element Label And Compare" owner="CommonMethods">
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.576699" level="INFO">${labelElement} = &lt;selenium.webdriver.remote.webelement.WebElement (session="a98bf2e5-a593-4743-a595-3fa51d34f6ef", element="ceca698d-ff27-4bb5-8cdf-f3c8041ee878")&gt;</msg>
+<var>${labelElement}</var>
+<arg>${webElementPath}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.571720" elapsed="0.004979"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.591103" level="INFO">${actualLabel} = Checkout</msg>
+<var>${actualLabel}</var>
+<arg>${labelElement}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.576699" elapsed="0.014404"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actualLabel.strip()}</arg>
+<arg>${expectedArgument}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.591103" elapsed="0.005443"/>
+</kw>
+<arg>${checkoutDropdownButton}</arg>
+<arg>${checkoutText}</arg>
+<status status="PASS" start="2024-04-02T10:58:41.570718" elapsed="0.026339"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:41.254757" elapsed="0.342300"/>
+</kw>
+<kw name="Check View Cart dropdown button" owner="CommonMethods">
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.598150" elapsed="0.018292"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.616442" level="INFO">Clicking element '//*[@id="cart"]/ul/li[2]/div/p/a[1]/strong'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.616442" elapsed="0.319928"/>
+</kw>
+<arg>${viewCartDropdownButton}</arg>
+<status status="PASS" start="2024-04-02T10:58:41.598150" elapsed="0.338447"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.949900" level="INFO">Current page contains element '//*[@id="content"]/form/div/table'.</msg>
+<arg>${tableShoppingCart}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.937107" elapsed="0.012793"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.953911" level="INFO">Page title is 'Shopping Cart'.</msg>
+<arg>${titleShoppingCart}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.950909" elapsed="0.003002"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.956914" level="INFO">Current location is 'https://www.demoshop24.com/index.php?route=checkout/cart'.</msg>
+<arg>${urlShoppingCart}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.953911" elapsed="0.003003"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:41.597610" elapsed="0.360527"/>
+</kw>
+<kw name="Check Checkout dropdown button" owner="CommonMethods">
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.959210" elapsed="0.024317"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:41.984527" level="INFO">Clicking element '//*[@id="cart"]/button'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:41.984527" elapsed="0.220889"/>
+</kw>
+<arg>${shoppingCartBlackButton}</arg>
+<status status="PASS" start="2024-04-02T10:58:41.958658" elapsed="0.246758"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:42.206410" elapsed="0.033338"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:42.240763" level="INFO">Clicking element '//*[@id="cart"]/ul/li[1]/table/tbody/tr[1]/td[5]/button'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:42.239748" elapsed="0.419820"/>
+</kw>
+<arg>${removeIPhone}</arg>
+<status status="PASS" start="2024-04-02T10:58:42.205416" elapsed="0.454152"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:42.660564" elapsed="0.020215"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:42.681781" level="INFO">Clicking element '//*[@id="cart"]/button'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:42.681781" elapsed="0.215047"/>
+</kw>
+<arg>${shoppingCartBlackButton}</arg>
+<status status="PASS" start="2024-04-02T10:58:42.659568" elapsed="0.237260"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:42.897823" elapsed="0.013019"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:42.910842" level="INFO">Clicking element '//*[@id="cart"]/ul/li[2]/div/p/a[2]/strong'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:42.910842" elapsed="0.287287"/>
+</kw>
+<arg>${checkoutDropdownButton}</arg>
+<status status="PASS" start="2024-04-02T10:58:42.896828" elapsed="0.301301"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.201140" level="INFO">Page title is 'Checkout'.</msg>
+<arg>${titleCheckoutPage}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.198129" elapsed="0.003011"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.205138" level="INFO">Current location is 'https://www.demoshop24.com/index.php?route=checkout/checkout'.</msg>
+<arg>${urlCheckoutPage}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.202140" elapsed="0.002998"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.210139" level="INFO">Current page contains element '//*[@id="accordion"]/div[1]/div[1]/h4'.</msg>
+<arg>${sectionCheckoutOptions}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.205138" elapsed="0.005001"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.216146" level="INFO">Current page contains element '//*[@id="accordion"]/div[2]/div[1]/h4'.</msg>
+<arg>${sectionBillingDetails}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.211138" elapsed="0.005008"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.220738" level="INFO">Current page contains element '//*[@id="accordion"]/div[3]/div[1]/h4'.</msg>
+<arg>${sectionPaymentMethod}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.216146" elapsed="0.004592"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.227244" level="INFO">Current page contains element '//*[@id="accordion"]/div[4]/div[1]/h4'.</msg>
+<arg>${sectionConfirmOrder}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.221762" elapsed="0.005482"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:41.958137" elapsed="1.269107"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:38.691482" elapsed="4.535762"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.228266" elapsed="0.014883"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.244048" level="INFO">Clicking element '//*[@id="accordion"]/div[2]/div[1]/h4'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.244048" elapsed="0.227188"/>
+</kw>
+<arg>${sectionBillingDetails}</arg>
+<status status="PASS" start="2024-04-02T10:58:43.228266" elapsed="0.243979"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.472245" elapsed="0.015605"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.488845" level="INFO">Clicking element '//*[@id="collapse-payment-address"]/div/form/div[3]/label/input'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.488845" elapsed="0.221569"/>
+</kw>
+<arg>${newAddressBillingDetails}</arg>
+<status status="PASS" start="2024-04-02T10:58:43.472245" elapsed="0.238169"/>
+</kw>
+<kw name="Input data in Billing Details form" owner="CommonMethods">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-04-02T10:58:43.712525" level="INFO">${name} = SWwFVy</msg>
+<var>${name}</var>
+<arg>6</arg>
+<arg>[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.712525" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-04-02T10:58:43.713522" level="INFO">${number} = 5632</msg>
+<var>${number}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.713522" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-04-02T10:58:43.714519" level="INFO">${random string with numbers} = NW69a5</msg>
+<var>${random string with numbers}</var>
+<arg>6</arg>
+<arg>[LETTERS][NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.713522" elapsed="0.000997"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.715520" level="INFO">Typing text 'SWwFVy' into text field '//*[@id="payment-new"]/div[1]/div/input'.</msg>
+<arg>${inputFieldsBD}/div[1]/div/input</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.714519" elapsed="0.056756"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.772281" level="INFO">Typing text 'SWwFVy' into text field '//*[@id="payment-new"]/div[2]/div/input'.</msg>
+<arg>${inputFieldsBD}/div[2]/div/input</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.772281" elapsed="0.016340"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.788621" level="INFO">Typing text 'SWwFVy' into text field '//*[@id="payment-new"]/div[3]/div/input'.</msg>
+<arg>${inputFieldsBD}/div[3]/div/input</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.788621" elapsed="0.021435"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.811495" level="INFO">Typing text 'NW69a5' into text field '//*[@id="payment-new"]/div[4]/div/input'.</msg>
+<arg>${inputFieldsBD}/div[4]/div/input</arg>
+<arg>${random string with numbers}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.810056" elapsed="0.016649"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.827715" level="INFO">Typing text 'NW69a5' into text field '//*[@id="payment-new"]/div[5]/div/input'.</msg>
+<arg>${inputFieldsBD}/div[5]/div/input</arg>
+<arg>${random string with numbers}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.826705" elapsed="0.022187"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.849894" level="INFO">Typing text 'SWwFVy' into text field '//*[@id="payment-new"]/div[6]/div/input'.</msg>
+<arg>${inputFieldsBD}/div[6]/div/input</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.849894" elapsed="0.016030"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.866931" level="INFO">Typing text '5632' into text field '//*[@id="payment-new"]/div[7]/div/input'.</msg>
+<arg>${inputFieldsBD}/div[7]/div/input</arg>
+<arg>${number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.865924" elapsed="0.022993"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:43.889977" level="INFO">Selecting options from selection list 'country_id' by label Lithuania.</msg>
+<arg>country_id</arg>
+<arg>Lithuania</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-04-02T10:58:43.888917" elapsed="0.236657"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>zone_id</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:44.126591" elapsed="0.027658"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>zone_id</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-04-02T10:58:44.154249" elapsed="0.019407"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:44.173656" level="INFO">Selecting options from selection list 'zone_id' by label Kaunas.</msg>
+<arg>zone_id</arg>
+<arg>Kaunas</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-04-02T10:58:44.173656" elapsed="0.234575"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:43.711503" elapsed="0.696728"/>
+</kw>
+<kw name="Check Payment Method form" owner="CommonMethods">
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:44.410207" elapsed="0.012623"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:44.422830" level="INFO">Clicking element '//*[@id="button-payment-address"]'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:44.422830" elapsed="0.212342"/>
+</kw>
+<arg>${continueButtonCheckout}</arg>
+<status status="PASS" start="2024-04-02T10:58:44.410207" elapsed="0.224965"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:44.638265" level="INFO">Current location is 'https://www.demoshop24.com/index.php?route=checkout/checkout'.</msg>
+<arg>${urlCheckoutPage}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-04-02T10:58:44.635172" elapsed="0.003093"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:44.645167" level="INFO">Current page contains element '//*[@id="accordion"]/div[3]/div[1]/h4'.</msg>
+<arg>${sectionPaymentMethod}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-04-02T10:58:44.638265" elapsed="0.006902"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-02T10:58:44.645167" elapsed="0.241765"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:44.886932" level="INFO">Clicking element '//*[@id="collapse-payment-method"]'.</msg>
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-02T10:58:44.886932" elapsed="0.225113"/>
+</kw>
+<arg>${sectionPayMethod}</arg>
+<status status="PASS" start="2024-04-02T10:58:44.645167" elapsed="0.466878"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Warning: No Payment options are available. Please</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-02T10:58:45.112045" elapsed="0.003513"/>
+</kw>
+<kw name="Page Should Contain Link" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:58:45.122239" level="INFO">Current page contains link '//*[@id="collapse-payment-method"]/div/div[1]/a'.</msg>
+<arg>${errorPaymentMethod3Link}</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<status status="PASS" start="2024-04-02T10:58:45.115558" elapsed="0.007217"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>for assistance!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-02T10:58:45.122775" elapsed="0.003453"/>
+</kw>
+<status status="PASS" start="2024-04-02T10:58:44.409241" elapsed="0.717989"/>
+</kw>
+<kw name="Check error message without check Terms &amp; Conditions checkbox" owner="CommonMethods">
+<kw name="Extra click element" owner="CommonMethods">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-04-02T10:59:25.275009" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-02T10:59:25.276129" level="FAIL">Element '//*[@id="button-payment-address"]' not visible after 40 seconds.</msg>
+<arg>${var1}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-04-02T10:58:45.128230" elapsed="40.149190">Element '//*[@id="button-payment-address"]' not visible after 40 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${var1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-02T10:59:25.277420" elapsed="0.000000"/>
+</kw>
+<arg>${continueButtonCheckout}</arg>
+<status status="FAIL" start="2024-04-02T10:58:45.127230" elapsed="40.150190">Element '//*[@id="button-payment-address"]' not visible after 40 seconds.</status>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>${urlCheckoutPage}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2024-04-02T10:59:25.277420" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>${sectionPaymentMethod}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2024-04-02T10:59:25.277420" elapsed="0.000000"/>
+</kw>
+<kw name="Extra click element" owner="CommonMethods">
+<arg>${sectionPayMethod}</arg>
+<status status="NOT RUN" start="2024-04-02T10:59:25.277420" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Warning: You must agree to the Terms &amp; Conditions!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-02T10:59:25.277420" elapsed="0.001001"/>
+</kw>
+<status status="FAIL" start="2024-04-02T10:58:45.127230" elapsed="40.151191">Element '//*[@id="button-payment-address"]' not visible after 40 seconds.</status>
+</kw>
+<kw name="Check error message after check Terms &amp; Conditions checkbox" owner="CommonMethods">
+<status status="NOT RUN" start="2024-04-02T10:59:25.278539" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-02T10:58:27.548257" elapsed="57.731474">Element '//*[@id="button-payment-address"]' not visible after 40 seconds.</status>
+</test>
+<status status="FAIL" start="2024-04-02T10:58:27.178590" elapsed="58.102174"/>
+</suite>
+<status status="FAIL" start="2024-04-02T10:58:27.175351" elapsed="58.107621"/>
+</suite>
+<status status="FAIL" start="2024-04-02T10:58:27.147417" elapsed="58.136559"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFramework-Internal">RobotFramework-Internal</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">RobotFramework-Internal.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="QESDEMO-2879">RobotFramework-Internal.TestCases.QESDEMO-2879</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
